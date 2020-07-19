@@ -8,11 +8,14 @@ import store from "./Redux/store";
 import HooksCakeContainer from "./Components/HooksCakeContainer";
 import HooksMilkShakeContainer from "./Components/HooksMilkShakeContainer";
 import NewCakeContainer from "./Components/NewCakeContainer";
+import ItemContainer from "./Components/ItemContainer";
 
 function App() {
   return (
     <Provider store={store}>
       <div className="App">
+        <ItemContainer cake />
+        <ItemContainer />
         <HooksCakeContainer />
         <CakeContainer />
         <IceCreamContainer />
